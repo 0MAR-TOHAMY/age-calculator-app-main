@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="inputs">
+      <div class="block">
+        <label for="day">Day</label>
+        <input type="text" id="day" name="day" placeholder="DD" required pattern="^(0?[1-9]|[12][0-9]|3[01])$">
+      </div>
+      <div class="block">
+        <label for="month">Month</label>
+        <input type="text" id="month" name="month" placeholder="MM" required pattern="^(0?[1-9]|1[0-2])$">
+      </div>
+      <div class="block">
+        <label for="year">Year</label>
+        <input type="text" id="year" name="year" placeholder="YYYY" required pattern="^(19|20)\d{2}$">
+      </div>
+    </div>
+    <button id="calculate-age"><img src="images/icon-arrow.svg" alt="arrow"></button>
+    <hr>
+    <div class="results">
+      <h1><span>--</span>Years</h1>
+      <h1><span>--</span>Months</h1>
+      <h1><span>--</span>Days</h1>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
